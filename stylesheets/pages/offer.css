@@ -1,0 +1,109 @@
+/* 오늘의 쇼핑 제안 */
+
+/* CSS 작성 */
+.logo{   
+    position: absolute;
+    width: 176px;
+    height: 40px;
+    left: 147px;
+    top: 100px;
+}
+
+.container{
+    position: absolute;
+    width: 1020px;
+    height: 1010px;
+    left: 321px;
+    top: 188px;
+}
+
+.offer{
+    position: absolute;
+    width: 1022px;
+    height: 354px;
+    left: 145px;
+    top: 188px;
+}
+
+.offerTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    width: 234px;
+    height: 30px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.offerList{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+
+    /* position: absolute; */
+    width: 1020px;
+    height: 270px;
+    left: 2px;
+    top: 54px;
+
+    /* justify-content: space-evenly; */
+}
+
+.productCard{
+    width: 200px;
+    height: 270px;
+
+    background: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* .info{
+    
+} */
+
+
+.infoName{
+    width: 172px;
+    height: 17px;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.infoStar{
+    width:68px;
+    height:13.82px;
+    display: block;
+    background-image: url("/assets/sprites/rating-stars.png");
+    background-size: 68px 12px;
+}
+/* 
+.infostar::before{
+    width: 50%;
+    height: 12px;
+    display:block;
+    background-image: url("/assets/sprites/rating-stars.png");
+    background-position: -10px -20px ;
+    background-size: 68px 12px;
+} */
+
+
+.titleIcon{
+    background-image: url("shopping.svg");
+}
