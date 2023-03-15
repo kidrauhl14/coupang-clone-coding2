@@ -1,7 +1,13 @@
 /* 오늘의 쇼핑 제안 */
 
 /* CSS 작성 */
-.logo{   
+
+body{
+    width: 1280px;
+    height: 2000px;
+}
+
+.logo picture img{   
     position: absolute;
     width: 176px;
     height: 40px;
@@ -9,13 +15,13 @@
     top: 100px;
 }
 
-.container{
-    position: absolute;
+/* .container{
+    position: relative;
     width: 1020px;
     height: 1010px;
     left: 321px;
     top: 188px;
-}
+} */
 
 .offer{
     position: absolute;
@@ -23,9 +29,12 @@
     height: 354px;
     left: 145px;
     top: 188px;
+
+    margin-right: 0px;
 }
 
 .offerTitle{
+    position: absolute;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -39,6 +48,24 @@
     flex-grow: 0;
 }
 
+.titleIcon img{
+    width: 30px;
+    height: 30px;
+}
+
+.offerTitle h2{
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 115%;
+
+    display: flex;
+    align-items: center;
+}
+
+
 .offerList{
     display: flex;
     flex-direction: row;
@@ -48,7 +75,7 @@
 
     /* position: absolute; */
     width: 1020px;
-    height: 270px;
+    height: 354px;
     left: 2px;
     top: 54px;
 
@@ -56,8 +83,14 @@
 }
 
 .productCard{
+    position: relative;
     width: 200px;
     height: 270px;
+    top: 54px;
+
+    padding-top: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     background: #FFFFFF;
 
@@ -66,14 +99,135 @@
     flex-grow: 0;
 }
 
-/* .info{
-    
-} */
+.BadgeDiscount{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 3px 10px;
+    gap: 10px;
 
+    position: absolute;
+    width: 53px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    /* Red/500 */
+
+    background: #E52330;
+    border-radius: 0px 0px 4px 0px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+
+    /* position: absolute; */
+    width: 172px;
+    height: 66px;
+    left: 14px;
+    top: 186px;
+}
 
 .infoName{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    position: absolute;   
     width: 172px;
     height: 17px;
+    padding-right: 0px;
+    padding-left: 0px;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+}
+
+.middle{
+    position: relative;  
+    width: 120px;
+    height: 37px;
+    top: 29px;
+    
+}
+
+.middle img{
+
+    width: 55px;
+    height: 16px;
+}
+
+.review{
+    font-size: 0;
+    /* display: inline-block; */
+    position: relative;
+    width: 117px;
+    height: 17px;
+    /* left: 14px; */
+    top: 29px;
+}
+
+.review2{
+    font-size: 0;
+    /* display: inline-block; */
+    position: relative;
+    width: 117px;
+    height: 17px;
+  /* left: 14px; */
+
+}
+
+.infoStar4{
+    display: inline-block;
+    position: absolute;
+    width: 68px;
+    height: 12px;
+    left: 0px;
+    background-image: url("/assets/sprites/rating-stars.png");
+    background-position: 0px -112px;
+    /* overflow: hidden; */
+    /* float: left 제거 */
+}
+
+.infoStar45{
+    display: inline-block;
+    position: absolute;
+    width: 68px;
+    height: 12px;
+    left: 0px;
+    background-image: url("/assets/sprites/rating-stars.png");
+    background-position: 0px -126px;
+}
+
+.infoStar5{
+    display: inline-block;
+    position: absolute;
+    width: 68px;
+    height: 12px;
+    left: 0px;
+    background-image: url("/assets/sprites/rating-stars.png");
+    background-position: 0px -140px;
+}
+
+.reviewNum{
+    display: inline-block;
+    position: absolute;
+    height: 17px;
+    width: 45px;
+    right: 0px;
 
     font-family: 'Noto Sans';
     font-style: normal;
@@ -81,27 +235,9 @@
     font-size: 14px;
     line-height: 120%;
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    color: #767676;
 }
 
-.infoStar{
-    width:68px;
-    height:13.82px;
-    display: block;
-    background-image: url("/assets/sprites/rating-stars.png");
-    background-size: 68px 12px;
-}
-/* 
-.infostar::before{
-    width: 50%;
-    height: 12px;
-    display:block;
-    background-image: url("/assets/sprites/rating-stars.png");
-    background-position: -10px -20px ;
-    background-size: 68px 12px;
-} */
 
 
 .titleIcon{
